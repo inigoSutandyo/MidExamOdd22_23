@@ -11,6 +11,7 @@ class CategoryController extends Controller
 {
     public function bookCategory($id) {
         $categories = Category::all();
+        $category = $categories->find($id);
         $books = Book::query()->join(
             'book_categories', 'book_categories.book_id', 'books.id'
         )-> join (
@@ -18,6 +19,6 @@ class CategoryController extends Controller
         )->where('category_id','=',"{$id}")->get();
 
 
-        return view('book.book_categories', compact('books','categories'));
+        return view('book.book_categories', compact('books','categories', 'category'));
     }
 }
