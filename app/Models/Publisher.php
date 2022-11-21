@@ -17,7 +17,7 @@ class Publisher extends Model
         'image'
     ];
 
-    public function book() {
-        return $this -> hasOne(Book::class);
+    public function books() {
+        return $this -> hasMany(Book::class);
     }
 }

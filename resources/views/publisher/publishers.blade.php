@@ -14,7 +14,7 @@
                         <p class="card-text"><b>Email : </b>{{$p->email}}</p>
                         <p class="card-text text-muted"><b>Address :</b> {{$p->address}}</p>
                         <p class="card-text text-muted"><b>Phone : </b>{{$p->phone}}</p>
-                        <a class="btn btn-primary" href="">Detail</a>
+                        <a class="btn btn-primary" href={{'/publishers/'.$p->id}}>Detail</a>
                     </div>
                 </div>
             </div>
