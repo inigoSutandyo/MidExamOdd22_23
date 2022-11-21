@@ -8,11 +8,6 @@ use Illuminate\Support\Facades\DB;
 
 class PublisherSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
     public function run()
     {
         $faker = Faker::create();
@@ -31,7 +26,6 @@ class PublisherSeeder extends Seeder
 
 
         for ($i=0; $i < 5; $i++) {
-            # code...
             $x = $faker->numberBetween(0,1);
             DB::table('publishers')->insert(
                 [
