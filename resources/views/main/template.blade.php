@@ -36,7 +36,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Publisher</a>
+                            <a class="nav-link active" href="/publishers">Publisher</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="#">Contact</a>

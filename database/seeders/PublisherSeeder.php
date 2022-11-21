@@ -26,7 +26,7 @@ class PublisherSeeder extends Seeder
 
         $image_list = [
             'publishers/publisher_1.jpg',
-            'publisher/publisher_dummy.png'
+            'publishers/publisher_dummy.png'
         ];
 
 
