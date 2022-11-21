@@ -12,7 +12,7 @@
                             by
                             {{$book->author}}
                         </div>
-                        <a href="#" class="btn btn-primary">Detail</a>
+                        <a href={{'/book/'.$book->id}} class="btn btn-primary">Detail</a>
                     </div>
                 </div>
             </div>

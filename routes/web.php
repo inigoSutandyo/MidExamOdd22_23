@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [BookController::class, 'index']);
+Route::get('/book/{id}', [BookController::class, 'detail']);
