@@ -15,4 +15,8 @@ class Publisher extends Model
         'email',
         'image'
     ];
+
+    public function book() {
+        return $this -> hasOne(Book::class);
+    }
 }
